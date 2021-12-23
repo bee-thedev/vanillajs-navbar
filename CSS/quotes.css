@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+ 
+/* :root{
+   /* ----- Fonts ----- */
+   /* --font-main: 'Caveat', cursive;
+  */
+   /* ------ Color Scheme ---- */
+ 
+   /* --color-main: gray;
+} */ 
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fbe3cb;
+  }
+/* ----- Main Container ------ */
+
+  .quote-container{
+      width: 540px;
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px 50px 75px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.1);;
+  }
+
+  /* ------- Header and p and span tag ----*/
+header, .quote-content :where(p, span){
+    color: dodgerblue;
+}
+
+/* ------ Header's Weight ----- */
+
+.quote-container header{
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*------ Content inside the Container -----*/
+
+.quote-container .quote-content{
+    margin: 35px 0;
+}
+
+/*------- Quote Content Containing the Quote text -----*/
+
+.quote-content .quote-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote-text i{
+    font-size: 15px;
+}
+
+.quote-text i:first-child{
+    margin: 3px 10px 0px 0px;
+    
+}
+
+.quote-text i:last-child{
+    margin: 0 0 3px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.quote-text .quote{
+    font-size: 18px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.quote-content .quote-author{
+    display: flex;
+    font-size: 18px;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
