@@ -25,7 +25,7 @@ body{
   }
 /* ----- Main Container ------ */
 
-  .quote-container{
+  .quoteContainer{
       width: 540px;
       background-color: ghostwhite;
       border-radius: 15px;
@@ -34,13 +34,13 @@ body{
   }
 
   /* ------- Header and p and span tag ----*/
-header, .quote-content :where(p, span){
+header, .quoteContent :where(p, span){
     color: dodgerblue;
 }
 
 /* ------ Header's Weight ----- */
 
-.quote-container header{
+.quoteContainer header{
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
@@ -54,62 +54,62 @@ header, .quote-content :where(p, span){
 
 /*------- Quote Content Containing the Quote text -----*/
 
-.quote-content .quote-text{
+.quoteContent .quoteText{
     display: flex;
     justify-content: space-between;
 }
 
-.quote-text i{
+.quoteText i{
     font-size: 15px;
 }
 
-.quote-text i:first-child{
+.quoteText i:first-child{
     margin: 3px 10px 0px 0px;
     
 }
 
-.quote-text i:last-child{
+.quoteText i:last-child{
     margin: 0 0 3px 10px;
     display: flex;
     align-items: flex-end;
 }
 
-.quote-text .quote{
+.quoteText .quote{
     font-size: 18px;
     text-align: center;
     word-break: break-all;
 }
 
-.quote-content .quote-author{
+.quoteContent .quoteAuthor{
     display: flex;
     font-size: 18px;
     justify-content: flex-end;
     margin-top: 24px;
 }
 
-.quote-author span:first-child{
+.quoteAuthor span:first-child{
     margin: 7px 5px 0 0;
     font-family: monospace;
 }
 
 /* ------ Button Division -----*/
 
-.quote-container .quote-button{
+.quoteContainer .quoteButton{
     border-top: 1px solid #fbe3cb;
 }
 
-.quote-button .quote-features{
+.quoteButton .quoteFeatures{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.quote-features ul{
+.quoteFeatures ul{
     display: flex;
 }
 
-.quote-features ul li{
+.quoteFeatures ul li{
     list-style: none;
     margin: 0 5px;
     height: 47px;
@@ -124,7 +124,7 @@ header, .quote-content :where(p, span){
     transition: all 0.3s ease;
 }
 
-.quote-features ul li:first-child{
+.quoteFeatures ul li:first-child{
     margin-left: 0%;
 }
 
@@ -155,7 +155,7 @@ ul .quote-speech.active{
     
 
 /* CSS */
-.quote-button button{
+.quoteButton button{
   background-color: #fbe3cb;
   border: 0 solid #E5E7EB;
   box-sizing: border-box;
@@ -180,11 +180,11 @@ ul .quote-speech.active{
   touch-action: manipulation;
 }
 
-.quote-button button:focus {
+.quoteButton button:focus {
   outline: 0;
 }
 
-.quote-button button:after {
+.quoteButton button:after {
   content: '';
   position: absolute;
   border: 1px solid hsl(205, 78%, 60%);
@@ -194,13 +194,13 @@ ul .quote-speech.active{
   height: calc(100% - 1px);
 }
 
-.quote-button button:hover:after {
+.quoteButton button:hover:after {
   bottom: 2px;
   left: 2px;
 }
 
 @media (min-width: 640px) {
-    .quote-button button {
+    .quoteButton button {
     padding: .5rem 2rem;
     font-size: .75rem;
   }
